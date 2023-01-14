@@ -1,0 +1,121 @@
+/* Global css */
+*{
+    padding:0px;
+    margin:0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --global-bg:rgba(255, 144, 14, 0.1);
+    --primary-color:#FF900E;
+}
+.container{
+    
+    max-width:1440px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+.section-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+.section-des{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding:30px 0px;
+}
+.primary-btn{
+    padding:20px 25px;
+    background-color:var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border:0px;
+}
+img{
+    width:100%;
+}
+
+/* Header + Banner */
+header{
+    padding:40px 0px;
+    background-color:var(--global-bg);
+}
+.menu ul{
+    display:flex;
+    align-items: center;
+    gap:80px;
+}
+.menu ul li{
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #424242;
+
+}
+.banner-text{
+    width:100%;
+    max-width:860px;
+    padding:100px 20px 50px 20px;
+    margin: 0px auto;
+    text-align: center;
+}
+.banner-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+}
+.banner-img{
+    text-align: center;
+    width:100%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+/* Mobile Responsive css */
+@media screen and (max-width:576px){
+.container{
+flex-direction: column;
+gap:30px;
+padding:0px;
+}
+.menu ul{
+    flex-direction: column;
+    gap:20px;
+}
+.banner-text{
+    padding:80px 0px 40px 0px;
+    width:100%;
+}
+.banner-title{
+    font-size:50px;
+    padding: 0px 20px;
+}
+.section-des{
+    padding-left:20px;
+    padding-right: 20px;
+}
+img{
+   width:90%;
+}
+}
